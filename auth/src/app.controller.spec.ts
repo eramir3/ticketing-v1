@@ -9,7 +9,7 @@ describe('AppController  Signup (e2e)', () => {
         email: 'test@test.com',
         password: 'password'
       })
-      .expect(400);
+      .expect(201);
   });
 
   it('returns a 400 with an invalid email', async () => {
