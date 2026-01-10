@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Payment {
+  orderId: String!
+}
+
+type Query {
+  payments: [Payment!]!
+  payment(id: Int!): Payment!
+}
+
+type Mutation {
+  createPayment(createPaymentInput: CreatePaymentInput!): Payment!
+  removePayment(id: Int!): Payment!
+}
+
+input CreatePaymentInput {
+  orderId: String!
+}
